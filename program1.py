@@ -7,12 +7,21 @@ while True:
     try:
         val = int(coping)
         print("Thank you for your proper input.")
+        if 1 <= val and val <= 3:
+            infected = input("I'm so sorry to hear that. Were you or someone you know infected with Covid-19? Please say 1 for yes, 0 for no: ")
+        elif 4 <= val and val <= 6:
+            infected = input("I see, were you or someone you know infected with Covid-19? Please say 1 for yes, 0 for no: ")
+        elif 7 <= val and val <= 10:
+            infected = input("Good to hear you are doing well! Were you or someone you know infected with Covid-19? Please say 1 for yes, 0 for no: ")
+        if infected:
+            print("I'm so sorry")
+        else:
+            print("That's good to hear.")
         break
     except ValueError:
         try:
-            float(coping)
+            val = float(coping)
             print("I'm sorry, the number should be a whole number,", val, "doesn't work")
-            break
         except ValueError:
             print("I'm sorry I'm looking for a number-digit, something like 1 or 4, two or six spelled out for example won't work")
 
