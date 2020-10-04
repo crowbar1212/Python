@@ -2,6 +2,7 @@ To my best understanding, program1 fulfills the following requirements for week3
     -Variables
     -Expressions
     -Conditionals
+    -Loops
 This program employs basic input requests and checks for correct input. Evaluating input values determines the response printed to the screen. 
 
 In order to replicate this program, do the following: 
